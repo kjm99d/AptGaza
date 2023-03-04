@@ -1,15 +1,16 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <BackgroundMap/>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import BackgroundMap from './components/BackgroundMap.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    BackgroundMap
   }
 }
 </script>
@@ -21,6 +22,10 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
+
+body {
+  margin: 0px
+}
+
 </style>
